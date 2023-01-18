@@ -33,7 +33,7 @@ resource "aws_route_table" "private-route-table" {
     Name = "private route table"
   }
 }
-
+###################################################################################################
 resource "aws_route_table_association" "a" {
   subnet_id      = aws_subnet.public-subnet.id
   route_table_id = aws_route_table.public-route-table.id
